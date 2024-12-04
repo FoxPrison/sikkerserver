@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Server Management Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Server Management System</h1>
+            <p>Organiser dine servere, opgaver og medarbejdere med stil!</p>
+        </header>
+
+        <!-- Server Section -->
+        <section id="serverSection" class="card">
+            <h2>Administrer Servere</h2>
+            <div class="server-creation">
+                <input type="text" id="serverName" placeholder="Indtast servernavn">
+                <button id="addServerBtn">Opret Server</button>
+            </div>
+            <div id="serverDropdownContainer">
+                <label for="serverDropdown">Vælg en server:</label>
+                <select id="serverDropdown"></select>
+                <button id="deleteServerBtn" class="danger">Slet Server</button>
+            </div>
+        </section>
+
+        <!-- Dashboard -->
+        <section id="dashboard" class="card">
+            <h2>Dashboard</h2>
+            <div id="statistics" class="statistics"></div>
+        </section>
+
+        <!-- To-Do Liste -->
+        <section id="todoSection" class="card">
+            <h2>To-Do Liste</h2>
+            <div class="todo-creation">
+                <input type="text" id="todoInput" placeholder="Tilføj en ny opgave">
+                <button id="addTodoBtn">Tilføj Opgave</button>
+            </div>
+            <ul id="todoList"></ul>
+        </section>
+
+        <!-- Staff Management -->
+        <section id="staffManagement" class="card">
+            <h2>Medarbejderadministration</h2>
+            <div class="staff-creation">
+                <input type="text" id="staffName" placeholder="Navn på medarbejder">
+                <input type="text" id="rankName" placeholder="Titel/rang">
+                <button id="addStaffBtn">Tilføj Medarbejder</button>
+            </div>
+            <ul id="staffList"></ul>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
